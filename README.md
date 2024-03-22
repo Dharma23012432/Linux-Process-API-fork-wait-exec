@@ -24,6 +24,7 @@ Test the C Program for the desired output.
 # PROGRAM:
 
 ## C Program to print process ID and parent Process ID using Linux API system calls
+```
 #include <stdio.h>
 #include <sys/types.h>
 #include <unistd.h>
@@ -53,12 +54,13 @@ int main(void)
 
 
 
-
+```
 
 
 
 
 ##OUTPUT
+```
 $ ./pidcheck.o 
 The process id: 2382
 The process id of parent function: 2258
@@ -83,8 +85,9 @@ $ ps
 
 
 
-
+```
 ## C Program to create new process using Linux API system calls fork() and exit()
+```
 #include <stdio.h>
 #include<stdlib.h>
 int main()
@@ -113,7 +116,7 @@ printf("I am parent, my pid is %d\n",getpid());
 sleep(100); 
 exit(0);} 
 }
-
+```
 
 
 
@@ -127,11 +130,12 @@ exit(0);}
 
 
 ##OUTPUT
+```
 $ ./forkcheck.o 
 I am parent, my pid is 13676
 Iam child my pid is 13677
 My parent pid is:13676
-
+```
 
 
 
@@ -142,7 +146,7 @@ My parent pid is:13676
 
 ## C Program to execute Linux system commands using Linux API system calls exec() family
 
-
+```
 #include <stdlib.h>
 #include <sys/wait.h>
 #include <sys/types.h>
@@ -165,7 +169,7 @@ printf("Running ps with execlp. Now with path specified\n");
                 puts("child did not exit successfully\n");
         printf("Done.\n");
         exit(0);}
-
+```
 
 
 
@@ -191,11 +195,11 @@ printf("Running ps with execlp. Now with path specified\n");
 
 ##OUTPUT
 
-
+```
 $ ./execcheck2.o 
 Running ps with execlp
 child did not exit successfully
-
+```
 
 
 
